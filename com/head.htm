@@ -1,0 +1,89 @@
+<div class="loaderbg">
+  <div class="loader"></div>
+</div>
+<header>
+  <div class="head1">
+    <div class="con flex_wrap flex_sb-ac">
+      <div class="hr1 flex">
+        <a class="hrb pl_0">网络地图</a>
+        <a class="hrb">收藏本站</a>
+        <a>联系我们</a>
+      </div>
+
+      <div class="hr2 flex">
+        <a class="hrb"><img src="{dede:global.cfg_cmspath/}/css_com/images/cn.png">简体中文</a>
+        <a class="hrb"><img src="{dede:global.cfg_cmspath/}/css_com/images/EN.png">English</a>
+        <a><img src="{dede:global.cfg_cmspath/}/css_com/images/ES.png">España</a>
+      </div>
+    </div>
+  </div>
+  <div class="head2 con">
+    <div class="logo"><a><img src="{dede:global.cfg_cmspath/}/css_com/images/logo.png"></a></div>
+    <div class="head2r flex">
+      <ul>
+        <li><a>首页</a></li>
+        <li><a>关于我们</a></li>
+        <li><a>产品中心</a></li>
+        <li><a>服务介绍</a></li>
+        <li><a>博客</a></li>
+        <li><a>联系我们</a></li>
+      </ul>
+      <div class="search flex">
+        <a class="search_icon flex_ac"><img src="{dede:global.cfg_cmspath/}/css_com/images/search.png"></a>
+        <div class="search_input">
+          <form name="formsearch" class="flex" action="/plus/search.php">
+            <input type="hidden" name="typeid" value="5,6,7">
+            <input name="q" class="text f-14" id="search-keyword" type="text" placeholder="搜索内容">
+            <input name="submit" class="btn" value="搜索" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <span></span> <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+<div class="headnav f-16">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><i></i>
+      <a>关于我们</a>
+    </li>
+    <li><i></i>
+      <a>产品中心</a>
+    </li>
+    <li><i></i>
+      <a>服务介绍</a>
+    </li>
+    <li><i></i>
+      <a>博客</a>
+    </li>
+    <li><i></i>
+      <a>联系我们</a>
+    </li>
+  </ul>
+</div>
+<script>
+  $("header .search_icon").click(function () {
+    $('header .search_input').toggle();
+  })
+  $("header .menu").click(function () {
+    $(this).toggleClass("on")
+    $(".headnav").stop(true, false).slideToggle(200)
+  })
+
+  $(".headnav li > a").click(function () {
+    if ($(this).siblings("dl").length != 0) {
+      $(this).toggleClass("on").siblings("dl").stop(true, false).slideToggle(200)
+      $(this).parent().siblings().find("dl").slideUp(200).siblings("a").removeClass("on")
+      return false
+    }
+  })
+  $(".headnav li > a").each(function () {
+    if ($(this).siblings("dl").length != 0) {
+      $(this).addClass("i")
+    }
+  })
+</script>

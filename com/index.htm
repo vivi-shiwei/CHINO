@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{dede:global.cfg_webname/}</title>
+  <meta name="description" content="{dede:global.cfg_description/}" />
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/swiper-bundle.min.css" type="text/css" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/sub.css" type="text/css" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/common.css" type="text/css" />
+  <script type="text/javascript" src="{dede:global.cfg_cmspath/}/css_com/js/jquery.min.js"></script>
+  <script type="text/javascript" src="{dede:global.cfg_cmspath/}/css_com/js/wow.min.js"></script>
+  <script type="text/javascript" src="{dede:global.cfg_cmspath/}/css_com/js/js-com.js"></script>
+  <script type="text/javascript" src="{dede:global.cfg_cmspath/}/css_com/js/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="{dede:global.cfg_cmspath/}/css_com/css/index.css" type="text/css" />
+</head>
+
+<body>
+  {dede:include filename="head.htm"/}
+  <nav>
+    <div class="swiper-banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner2">
+            <p class="f-38 hidd1">专注于包装优化测试解决方案</p>
+            <p class="f-24 hidd1">向我们咨询最新的成功案例</p>
+            <div class="more"><a class="c-fff f-18">查看更多</a></div>
+          </div>
+          <img src="{dede:global.cfg_cmspath/}/css_com/images/banner1.jpg" class="ban_img" />
+        </div>
+        <div class="swiper-slide">
+          <div class="banner2">
+            <p class="f-38 hidd1">专注于包装优化测试解决方案</p>
+            <p class="f-24 hidd1">向我们咨询最新的成功案例</p>
+            <div class="more"><a class="c-fff f-18">查看更多</a></div>
+          </div>
+          <img src="{dede:global.cfg_cmspath/}/css_com/images/banner1.jpg" class="ban_img" />
+        </div>
+        <div class="swiper-slide">
+          <div class="banner2">
+            <p class="f-38 hidd1">专注于包装优化测试解决方案</p>
+            <p class="f-24 hidd1">向我们咨询最新的成功案例</p>
+            <div class="more"><a class="c-fff f-18">查看更多</a></div>
+          </div>
+          <img src="{dede:global.cfg_cmspath/}/css_com/images/banner1.jpg" class="ban_img" />
+        </div>
+      </div>
+      <div class="ban-pagination"></div>
+    </div>
+  </nav>
+
+
+
+  <script type="text/javascript" src="{dede:global.cfg_cmspath/}/css_com/js/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-banner', {
+      spaceBetween: 0,
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      speed: 1200,
+      pagination: {
+        el: '.ban-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+
+</html>
