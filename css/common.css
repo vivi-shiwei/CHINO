@@ -716,7 +716,7 @@ dl dt {
 .right_column ul {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background: #1266b9;
+  background: rgb(18, 102, 185, 0.5);
   width: 76px;
 }
 
