@@ -631,7 +631,7 @@ dl dt {
 }
 
 .modal {
-  z-index: 9999;
+  z-index: 9997;
   display: none;
   position: fixed;
   top: calc((100% - 220px)/2);
@@ -698,7 +698,7 @@ dl dt {
 }
 
 .right_column {
-  z-index: 9999;
+  z-index: 9997;
   position: fixed;
   right: 0px;
   /* right: -68px; */
@@ -782,7 +782,7 @@ dl dt {
   padding: 7px 12px;
   border-radius: 5px;
   right: 0;
-  z-index: 9999;
+  z-index: 9997;
 }
 
 .gotop600 .gotop {
