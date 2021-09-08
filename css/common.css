@@ -983,7 +983,7 @@ dl dt {
   }
 
   .modal-con {
-    padding: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 1%;
   }
 
   .modal .btn {
@@ -992,7 +992,7 @@ dl dt {
   }
 
   .modal p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .modal .btn1 {
